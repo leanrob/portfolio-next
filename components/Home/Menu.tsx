@@ -3,6 +3,7 @@ import React from 'react'
 import { MenuContainer, MenuItems, Item } from './HomeStyles'
 
 const Menu = ({ data }: any) => {
+    console.log(data)
     const { menuItems } = data
     const items =
         menuItems &&
