@@ -4,6 +4,7 @@ import AboutThisSite from './AboutThisSite'
 import LanguagesAndFrameworks from './LanguagesAndFrameworks'
 import ContactMe from './ContactMe'
 import Footer from './Footer'
+import Menu from './Menu'
 
 export {
     AboveTheFold,
@@ -12,4 +13,5 @@ export {
     LanguagesAndFrameworks,
     ContactMe,
     Footer,
+    Menu,
 }

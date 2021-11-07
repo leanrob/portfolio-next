@@ -6,6 +6,7 @@ const dotenv = require('dotenv')
 import { Page, Container } from '../styles/IndexStyles'
 
 import {
+    Menu,
     AboveTheFold,
     AboutThisSite,
     HighLevelSkills,
@@ -15,6 +16,7 @@ import {
 } from '@components/Home'
 
 type HomeData = {
+    menu: any
     aboveTheFold: any
     highLevelSkills: any
 }
@@ -33,12 +35,13 @@ export const getStaticProps = async () => {
 function Home({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
     dotenv.config()
 
-    const { aboveTheFold, highLevelSkills } = data
+    const { aboveTheFold, highLevelSkills, menu } = data
     console.log(data)
 
     return (
         <Page>
             <Container>
+                <Menu data={menu} />
                 <AboveTheFold data={aboveTheFold} />
                 <HighLevelSkills data={highLevelSkills} />
                 <AboutThisSite />

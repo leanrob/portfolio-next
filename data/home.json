@@ -1,4 +1,26 @@
 {
+  "menu": [
+    {
+      "title": "Home",
+      "link": "/"
+    },
+    {
+      "title": "Skills",
+      "link": "/"
+    },
+    {
+      "title": "Technologies",
+      "link": "/"
+    },
+    {
+      "title": "What I Do",
+      "link": "/"
+    },
+    {
+      "title": "Blog",
+      "link": "/"
+    }
+  ],
   "aboveTheFold": {
     "header": "Rob Byrne",
     "subheader": "Software Engineer"

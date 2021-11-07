@@ -1,5 +1,37 @@
 import styled from 'styled-components'
 
+// Menu Styles
+
+const MenuContainer = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    min-height: 80px;
+    position: sticky;
+    top: 0;
+`
+
+const MenuItems = styled.div`
+    width: 1050px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+`
+
+const Item = styled.div`
+    margin: 0 10px;
+    color: rgb(105, 105, 105);
+
+    &:hover {
+        color: rgb(0, 0, 0);
+    }
+`
+
+// END - Menu Styles
+
 const ATFContainer = styled.div`
     width: 100%;
     background-color: grey;
@@ -9,11 +41,11 @@ const ATFContainer = styled.div`
 // High Level Skills Styles
 
 const HLSContainer = styled.div`
-    width: 100%;
+    max-width: 1050px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 6.25rem 0;
+    padding: 6.25rem 1rem;
 `
 
 const SkillsHeader = styled.h2`
@@ -33,7 +65,6 @@ const SkillsSubheader = styled.p`
 const SkillsGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    //grid-template-rows: 100px 100px 100px;
     column-gap: 22px;
     row-gap: 22px;
 `
@@ -86,11 +117,33 @@ const ATSContainer = styled.div`
     height: 600px;
 `
 
+// Languages and Frameworks Styles
+
 const LAFContainer = styled.div`
     width: 100%;
     background-color: lightpink;
     height: 800px;
 `
+
+const LAFScrollContainer = styled.div`
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100vw;
+    left: calc((100vw - 1000px) / 2);
+`
+
+const LogosRow = styled.div`
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: slide 80s linear infinite;
+`
+
+const LogosContent = styled.div`
+    display: flex;
+`
+
+// END - Languages and Frameworks Styles
 
 const CMContainer = styled.div`
     width: 100%;
@@ -105,9 +158,15 @@ const FooterContainer = styled.div`
 `
 
 export {
+    MenuContainer,
+    MenuItems,
+    Item,
     ATFContainer,
     ATSContainer,
     LAFContainer,
+    LAFScrollContainer,
+    LogosRow,
+    LogosContent,
     CMContainer,
     FooterContainer,
     HLSContainer,

@@ -9,9 +9,10 @@ const Page = styled.div`
 `
 
 const Container = styled.div`
-    width: 1000px;
-    max-width: 100vw;
-    background-color: lightblue;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 
 export { Page, Container }

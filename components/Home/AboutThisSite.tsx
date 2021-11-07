@@ -2,8 +2,6 @@ import React from 'react'
 
 import { ATSContainer } from './HomeStyles'
 
-const AboutThisSite = ({ data }: any) => (
-    <ATSContainer>{JSON.stringify(data)}</ATSContainer>
-)
+const AboutThisSite = () => <ATSContainer>about this site</ATSContainer>
 
 export default AboutThisSite
