@@ -2,6 +2,8 @@ import React from 'react'
 
 import { ATFContainer } from './HomeStyles'
 
-const AboveTheFold = () => <ATFContainer>Above the fold</ATFContainer>
+const AboveTheFold = ({ data }: any) => (
+    <ATFContainer>{JSON.stringify(data)}</ATFContainer>
+)
 
 export default AboveTheFold

@@ -1,9 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server'
 
 export function middleware(req: NextRequest) {
-    const basicAuth = req.headers.get('authorization')
+    const url = req.url
+    if (url.includes('api')) {
+        return NextResponse.next()
+    }
 
-    console.log(process.env)
+    const basicAuth = req.headers.get('authorization')
 
     if (basicAuth) {
         const auth = basicAuth.split(' ')[1]

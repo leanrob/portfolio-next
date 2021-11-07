@@ -1,0 +1,25 @@
+{
+  "aboveTheFold": {
+    "header": "Rob Byrne",
+    "subheader": "Software Engineer"
+  },
+  "highLevelSkills": {
+    "skills": [
+      {
+        "title": "Frontend & UX",
+        "content": "Building pixel-perfect web apps with intuitive UX. Exceptional experiences for amazing customers!",
+        "link": "/frontend"
+      },
+      {
+        "title": "Tooling for Devs",
+        "content": "I have built tooling for companies of all sizes to make developers more productive, powerful and better every day.",
+        "link": "/tooling"
+      },
+      {
+        "title": "Backend",
+        "content": "API's of all kinds! RESTful, GraphQL, NodeJS serverless functions, Ruby-on-Rails, event-based systems in Rust...",
+        "link": "/backend"
+      }
+    ]
+  }
+}

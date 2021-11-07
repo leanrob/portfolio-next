@@ -1,6 +1,6 @@
 import React from 'react'
 
-import type { NextPage } from 'next'
+import { InferGetStaticPropsType } from 'next'
 const dotenv = require('dotenv')
 
 import { Page, Container } from '../styles/IndexStyles'
@@ -14,14 +14,33 @@ import {
     Footer,
 } from '@components/Home'
 
-const Home: NextPage = () => {
+type HomeData = {
+    aboveTheFold: any
+    highLevelSkills: any
+}
+
+export const getStaticProps = async () => {
+    const res = await fetch(`${process.env.API_URL}/api/home`)
+    const data: HomeData = await res.json()
+
+    return {
+        props: {
+            data,
+        },
+    }
+}
+
+function Home({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
     dotenv.config()
+
+    const { aboveTheFold, highLevelSkills } = data
+    console.log(data)
 
     return (
         <Page>
             <Container>
-                <AboveTheFold />
-                <HighLevelSkills />
+                <AboveTheFold data={aboveTheFold} />
+                <HighLevelSkills data={highLevelSkills} />
                 <AboutThisSite />
                 <LanguagesAndFrameworks />
                 <ContactMe />
