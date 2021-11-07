@@ -23,6 +23,19 @@ export default class MyDocument extends Document {
             <Html>
                 <title> Rob Byrne: A Software Craftsman - Portfolio Site</title>
                 <Head>
+                    <link
+                        rel="preconnect"
+                        href="https://fonts.googleapis.com"
+                    />
+                    <link
+                        rel="preconnect"
+                        href="https://fonts.gstatic.com"
+                        crossOrigin
+                    />
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+                        rel="stylesheet"
+                    />
                     {/* Step 5: Output the styles in the head  */}
                     {this.props.styleTags}
                 </Head>
