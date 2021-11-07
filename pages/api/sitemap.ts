@@ -12,7 +12,6 @@ export default async (req: any, res: any) => {
 
     res.writeHead(200, {
         'Content-Type': 'application/xml',
-        'X-Robots-Tag': 'index',
     })
 
     const xmlString = await streamToPromise(
