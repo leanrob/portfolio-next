@@ -4,6 +4,8 @@
     "subheader": "Software Engineer"
   },
   "highLevelSkills": {
+    "header": "High Level Skills",
+    "subheader": "A 10,000ft view of Rob...",
     "skills": [
       {
         "title": "Frontend & UX",
@@ -19,6 +21,51 @@
         "title": "Backend",
         "content": "API's of all kinds! RESTful, GraphQL, NodeJS serverless functions, Ruby-on-Rails, event-based systems in Rust...",
         "link": "/backend"
+      },
+      {
+        "title": "DevOps",
+        "content": "Continuous delivery, continuous integration, continuous monitoring and always continuous improvement.",
+        "link": "/devops"
+      },
+      {
+        "title": "Cloud Computing",
+        "content": "Deploying apps in Google Cloud Platform, Amazon AWS, Vercel, and more. All the best Cloud Computing services.",
+        "link": "/cloud"
+      },
+      {
+        "title": "Commerce",
+        "content": "Building e-commerce solutions for companies of all sizes. Both eCommerce and Retail Commerce right in the store.",
+        "link": "/commerce"
+      },
+      {
+        "title": "Financial Technology",
+        "content": "Building performant and secure platforms that stand up the even the toughest market scrutiny of regulatory agencies.",
+        "link": "/financial-tech"
+      },
+      {
+        "title": "Constant Improvement",
+        "content": "Getting a little better every day! Books, courses, articles, peers, pair programming, anything else you can imagine",
+        "link": "/improvement"
+      },
+      {
+        "title": "Professional Development",
+        "content": "I'm always looking to be a better professional. Giving and getting direct constructive feedback so that we all improve.",
+        "link": "/professionalism"
+      },
+      {
+        "title": "Always taking notes",
+        "content": "In real life with countless Moleskine notebooks, and digitally with markdown in Obsidian. I'm always adding to my second brain!",
+        "link": "/note-taking"
+      },
+      {
+        "title": "Conscious Awareness",
+        "content": "Meditation is who I am not what I do. Always trying to find out more about who or what I am at the core.",
+        "link": "/meditation"
+      },
+      {
+        "title": "Life is good",
+        "content": "Living Each day to the fullest. Travelling, meditating swimming, golfing, hiking, yoga,  reading, gaming, concerts...",
+        "link": "/life"
       }
     ]
   }
