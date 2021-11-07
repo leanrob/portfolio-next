@@ -78,13 +78,17 @@ const Skill = styled.div`
     cursor: pointer;
     border: solid 1px rgb(234, 234, 234);
 
+    a {
+        font-weight: 600;
+        color: rgb(20, 95, 173);
+    }
+
     &:hover {
         transition: box-shadow 0.2s ease;
         box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 30px 0px;
         border: 1px solid transparent;
 
         a {
-            color: rgb(35, 141, 248);
             text-decoration: underline;
         }
     }
