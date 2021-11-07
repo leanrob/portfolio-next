@@ -36,7 +36,6 @@ function Home({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
     dotenv.config()
 
     const { aboveTheFold, highLevelSkills, menu } = data
-    console.log(data)
 
     return (
         <Page>
