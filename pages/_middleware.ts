@@ -13,6 +13,7 @@ export function middleware(req: NextRequest) {
         const [user, pwd] = Buffer.from(auth, 'base64').toString().split(':')
 
         if (user === 'admin' && pwd === 'its-a-me-mario') {
+            return NextResponse.next()
         }
     }
 
