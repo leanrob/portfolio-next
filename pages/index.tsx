@@ -20,12 +20,12 @@ type HomeData = {
 }
 
 export const getStaticProps = async () => {
-    const res = await fetch(`${process.env.API_URL}/api/home`)
-    const data: HomeData = await res.json()
+    // const res = await fetch(`${process.env.API_URL}/api/home`)
+    // const data: HomeData = await res.json()
 
     return {
         props: {
-            data,
+            data: {},
         },
     }
 }
@@ -33,14 +33,14 @@ export const getStaticProps = async () => {
 function Home({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
     dotenv.config()
 
-    const { aboveTheFold, highLevelSkills } = data
+    // const { aboveTheFold, highLevelSkills } = data
     console.log(data)
 
     return (
         <Page>
             <Container>
-                <AboveTheFold data={aboveTheFold} />
-                <HighLevelSkills data={highLevelSkills} />
+                <AboveTheFold />
+                <HighLevelSkills />
                 <AboutThisSite />
                 <LanguagesAndFrameworks />
                 <ContactMe />
