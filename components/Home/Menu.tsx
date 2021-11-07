@@ -5,15 +5,13 @@ import { MenuContainer, MenuItems, Item } from './HomeStyles'
 const Menu = ({ data }: any) => {
     console.log(data)
     const { menuItems } = data
-    const items =
-        menuItems &&
-        menuItems.map((item: any, index: number) => {
-            return (
-                <Item key={index}>
-                    <a href={item.link}>{item.title}</a>
-                </Item>
-            )
-        })
+    const items = menuItems.map((item: any, index: number) => {
+        return (
+            <Item key={index}>
+                <a href={item.link}>{item.title}</a>
+            </Item>
+        )
+    })
     return (
         <MenuContainer>
             <MenuItems>{items}</MenuItems>
