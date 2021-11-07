@@ -20,7 +20,7 @@ export default class MyDocument extends Document {
 
     render() {
         return (
-            <Html>
+            <Html lang="en-US">
                 <Head>
                     <title>
                         Rob Byrne: A Software Craftsman - Portfolio Site
