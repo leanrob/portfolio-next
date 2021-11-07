@@ -21,6 +21,7 @@ export default class MyDocument extends Document {
     render() {
         return (
             <Html>
+                <title> Rob Byrne - Portfolio Site</title>
                 <Head>
                     {/* Step 5: Output the styles in the head  */}
                     {this.props.styleTags}
