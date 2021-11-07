@@ -3,7 +3,7 @@ import React from 'react'
 import type { NextPage } from 'next'
 const dotenv = require('dotenv')
 
-import { Page, Container } from './IndexStyles'
+import { Page, Container } from '../styles/IndexStyles'
 
 import {
     AboveTheFold,
