@@ -3,7 +3,8 @@ import React from 'react'
 import { MenuContainer, MenuItems, Item } from './HomeStyles'
 
 const Menu = ({ data }: any) => {
-    const menuItems = data.map((item: any, index: number) => {
+    const { menuItems } = data
+    const items = menuItems.map((item: any, index: number) => {
         return (
             <Item key={index}>
                 <a href={item.link}>{item.title}</a>
@@ -12,7 +13,7 @@ const Menu = ({ data }: any) => {
     })
     return (
         <MenuContainer>
-            <MenuItems>{menuItems}</MenuItems>
+            <MenuItems>{items}</MenuItems>
         </MenuContainer>
     )
 }
