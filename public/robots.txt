@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-next-htkpkk3gd-leanrob.vercel.app/api/sitemap
