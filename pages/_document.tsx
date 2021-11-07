@@ -21,8 +21,14 @@ export default class MyDocument extends Document {
     render() {
         return (
             <Html>
-                <title> Rob Byrne: A Software Craftsman - Portfolio Site</title>
                 <Head>
+                    <title>
+                        Rob Byrne: A Software Craftsman - Portfolio Site
+                    </title>
+                    <meta
+                        name="description"
+                        content="A portfolio site for Rob Byrne - A Software Craftsman"
+                    />
                     <link
                         rel="preconnect"
                         href="https://fonts.googleapis.com"
