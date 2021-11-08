@@ -59,7 +59,8 @@ const SkillsHeader = styled.h2`
 const SkillsSubheader = styled.p`
     font-weight: 400;
     color: rgb(105, 105, 105);
-    margin-bottom: 3em;
+    margin: 20px 1.5em 3em 1.5em;
+    text-align: center;
 `
 
 const SkillsGrid = styled.div`
@@ -67,6 +68,13 @@ const SkillsGrid = styled.div`
     grid-template-columns: repeat(3, 1fr);
     column-gap: 22px;
     row-gap: 22px;
+
+    @media (max-width: 1015px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 690px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 const Skill = styled.div`
