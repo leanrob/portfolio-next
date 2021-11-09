@@ -6,8 +6,8 @@ const Page = styled.div`
     overflow-y: scroll;
     display: flex;
     justify-content: center;
-    background-color: #f6f6f6;
-    color: #2c2e32;
+    background-color: ${(props) => props.theme.home.white};
+    color: ${(props) => props.theme.home.black};
 `
 
 const Container = styled.div`

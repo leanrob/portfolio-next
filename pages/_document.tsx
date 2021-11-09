@@ -39,9 +39,10 @@ export default class MyDocument extends Document {
                         crossOrigin
                     />
                     <link
-                        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+                        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;800&display=swap"
                         rel="stylesheet"
                     />
+                    <link href="/fonts/BluuNext-Bold.otf" />
                     {/* Step 5: Output the styles in the head  */}
                     {this.props.styleTags}
                 </Head>
