@@ -36,7 +36,13 @@ const Item = styled.div`
 
 const ATFContainer = styled.div`
     width: 100%;
-    background-color: ${(props) => props.theme.home.black};
+    background: linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(44, 46, 50, 1) 91%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background: ${(props) => props.theme.home.black};
     color: ${(props) => props.theme.home.white};
     height: 100vh;
 `
