@@ -16,7 +16,7 @@ const AboveTheFold = ({ data }: any) => (
                 <h2>Web & Mobile</h2>
             </ATFHeader>
             <ATFSubheader>
-                <p>Crafting quality code in a variety of domains</p>
+                <p>Crafting quality software in a variety of domains</p>
                 <span>
                     Full-stack solutions;{' '}
                     <a
