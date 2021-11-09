@@ -1,9 +1,12 @@
 import React from 'react'
 
-import { ATFContainer } from './HomeStyles'
+import { ATFContainer, ATFSpacer } from './HomeStyles'
 
 const AboveTheFold = ({ data }: any) => (
-    <ATFContainer>{JSON.stringify(data)}</ATFContainer>
+    <ATFContainer>
+        <div>{JSON.stringify(data)}</div>
+        <ATFSpacer imageSrc="./images/layered-waves.svg" />
+    </ATFContainer>
 )
 
 export default AboveTheFold

@@ -32,11 +32,29 @@ const Item = styled.div`
 
 // END - Menu Styles
 
+// Above the fold Styles
+
 const ATFContainer = styled.div`
     width: 100%;
     background-color: grey;
     height: 100vh;
 `
+
+const ATFSpacer = styled.div`
+    aspect-ratio: 1400/350;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./images/layered-waves.svg');
+
+    @media (max-width: 1015px) {
+        background-image: url('./images/layered-waves-mobile.svg');
+        aspect-ratio: 900/675;
+    }
+`
+
+// END - Above the fold Styles
 
 // High Level Skills Styles
 
@@ -45,7 +63,7 @@ const HLSContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 6.25rem 1rem;
+    padding: 3rem 1rem 6.25rem 1rem;
 `
 
 const SkillsHeader = styled.h2`
@@ -174,6 +192,7 @@ export {
     MenuItems,
     Item,
     ATFContainer,
+    ATFSpacer,
     ATSContainer,
     LAFContainer,
     LAFScrollContainer,

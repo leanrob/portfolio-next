@@ -6,6 +6,8 @@ const Page = styled.div`
     overflow-y: scroll;
     display: flex;
     justify-content: center;
+    background-color: #f6f6f6;
+    color: #2c2e32;
 `
 
 const Container = styled.div`
