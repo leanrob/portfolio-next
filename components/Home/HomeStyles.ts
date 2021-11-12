@@ -241,7 +241,6 @@ const ATSContainer = styled.div`
 
 const LAFContainer = styled.div`
     width: 100%;
-    background-color: lightpink;
     height: 800px;
 `
 
@@ -250,20 +249,32 @@ const LAFScrollContainer = styled.div`
     white-space: nowrap;
     width: 100vw;
     left: calc((100vw - 1000px) / 2);
+    margin: 20px 0;
 `
 
 const LogosRow = styled.div``
 
 const LogoSet = styled.div`
     display: flex;
-    height: 50px;
+    height: 60px;
 `
 
 const Logo = styled.div`
+    content: '';
     width: 200px;
     height: 100%;
-    background-color: red;
     margin: 0 10px;
+    background-size: 196px;
+    background-image: url(${(props) => props.img});
+    background-repeat: no-repeat;
+    //background-attachment: fixed;
+    background-position: center;
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+
+    &:hover {
+        filter: grayscale(0%);
+    }
 `
 
 const LogosContent = styled.div`

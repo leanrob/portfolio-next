@@ -12,34 +12,34 @@ import {
 const LanguagesAndFrameworks = () => {
     const langSet = [
         {
-            title: '1',
+            image: 'reactjs',
         },
         {
-            title: '2',
+            image: 'redis',
         },
         {
-            title: '3',
+            image: 'reactjs',
         },
         {
-            title: '4',
+            image: 'reactjs',
         },
         {
-            title: '5',
+            image: 'reactjs',
         },
         {
-            title: '6',
+            image: 'reactjs',
         },
         {
-            title: '7',
+            image: 'reactjs',
         },
         {
-            title: '8',
+            image: 'reactjs',
         },
         {
-            title: '9',
+            image: 'reactjs',
         },
         {
-            title: '10',
+            image: 'reactjs',
         },
     ]
     const items = [...langSet, ...langSet]
@@ -51,7 +51,10 @@ const LanguagesAndFrameworks = () => {
                     <LogosContent>
                         <LogoSet>
                             {items.map((item, index) => (
-                                <Logo key={index}>{item.title}</Logo>
+                                <Logo
+                                    key={index}
+                                    img={`./images/frameworks/${item.image}-logo.svg`}
+                                />
                             ))}
                         </LogoSet>
                     </LogosContent>
