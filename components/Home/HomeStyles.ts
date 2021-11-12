@@ -252,15 +252,41 @@ const LAFScrollContainer = styled.div`
     left: calc((100vw - 1000px) / 2);
 `
 
-const LogosRow = styled.div`
+const LogosRow = styled.div``
+
+const LogoSet = styled.div`
+    display: flex;
+    height: 50px;
+`
+
+const Logo = styled.div`
+    width: 200px;
+    height: 100%;
+    background-color: red;
+    margin: 0 10px;
+`
+
+const LogosContent = styled.div`
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
     animation: slide 80s linear infinite;
-`
+    transform: translate3d(0, 0, 0);
 
-const LogosContent = styled.div`
-    display: flex;
+    @keyframes slide {
+        0% {
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(-50%, 0, 0);
+            -moz-transform: translate3d(-50%, 0, 0);
+            -ms-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+        }
+    }
 `
 
 // END - Languages and Frameworks Styles
@@ -290,6 +316,8 @@ export {
     LAFContainer,
     LAFScrollContainer,
     LogosRow,
+    LogoSet,
+    Logo,
     LogosContent,
     CMContainer,
     FooterContainer,
