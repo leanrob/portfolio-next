@@ -259,7 +259,11 @@ const LogoSet = styled.div`
     height: 60px;
 `
 
-const Logo = styled.div`
+interface LogoProps {
+    readonly img: string
+}
+
+const Logo = styled.div<LogoProps>`
     content: '';
     width: 200px;
     height: 100%;
