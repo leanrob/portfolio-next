@@ -23,7 +23,76 @@
       }
     ]
   },
-  "languagesAndFrameworks": "example",
+  "languagesAndFrameworks": {
+    "header": "Languages, Frameworks, DevOps & Tooling",
+    "subheader": "So many tools, so little time. Which to choose? \n Choose the right one for the job!",
+    "spinnerContent": {
+      "backend": [
+        {
+          "image": "redis"
+        },
+        {
+          "image": "serverless"
+        },
+        {
+          "image": "nodejs"
+        },
+        {
+          "image": "express"
+        },
+        {
+          "image": "mongodb"
+        },
+        {
+          "image": "rust"
+        },
+        {
+          "image": "docker"
+        },
+        {
+          "image": "kubernetes"
+        },
+        {
+          "image": "vercel"
+        },
+        {
+          "image": "google-cloud-platform"
+        }
+      ],
+      "frontend": [
+        {
+          "image": "styled-components"
+        },
+        {
+          "image": "typescript"
+        },
+        {
+          "image": "nextjs"
+        },
+        {
+          "image": "reactjs"
+        },
+        {
+          "image": "redux"
+        },
+        {
+          "image": "graphql"
+        },
+        {
+          "image": "react-native"
+        },
+        {
+          "image": "testing-library"
+        },
+        {
+          "image": "vuejs"
+        },
+        {
+          "image": "jest"
+        }
+      ]
+    }
+  },
   "aboveTheFold": {
     "header": "Rob Byrne",
     "subheader": "Software Engineer"
