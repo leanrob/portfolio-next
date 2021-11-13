@@ -34,8 +34,8 @@ const LanguagesAndFrameworks = ({ data }: FrameworksProps) => {
                     <LogosContent speed={0}>
                         <LogoSet>
                             {[
-                                ...spinnerContent.frontend,
-                                ...spinnerContent.frontend,
+                                ...spinnerContent?.frontend,
+                                ...spinnerContent?.frontend,
                             ].map((item, index) => (
                                 <Logo
                                     key={index}
@@ -49,8 +49,8 @@ const LanguagesAndFrameworks = ({ data }: FrameworksProps) => {
                     <LogosContent speed={1}>
                         <LogoSet>
                             {[
-                                ...spinnerContent.backend,
-                                ...spinnerContent.backend,
+                                ...spinnerContent?.backend,
+                                ...spinnerContent?.backend,
                             ].map((item, index) => (
                                 <Logo
                                     key={index}
