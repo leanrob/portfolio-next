@@ -63,7 +63,7 @@ function Home({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
                 <AboveTheFold data={aboveTheFold} />
                 <HighLevelSkills data={highLevelSkills} />
                 <AboutThisSite />
-                <LanguagesAndFrameworks data={languagesAndFrameworks} />
+                {/*<LanguagesAndFrameworks data={languagesAndFrameworks} />*/}
                 <ContactMe />
                 <Footer />
             </Container>
