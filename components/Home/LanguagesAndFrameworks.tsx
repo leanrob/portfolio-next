@@ -9,7 +9,9 @@ import {
     LogosContent,
     Header,
     Subheader,
+    ColorsToggle,
 } from './HomeStyles'
+import Toggle from '@components/common/Toggle'
 
 type FrameworksProps = {
     data: {
@@ -23,6 +25,7 @@ type FrameworksProps = {
 }
 
 const LanguagesAndFrameworks = ({ data }: FrameworksProps) => {
+    const [isGreyscale, setColorToggle] = React.useState(true)
     const { header, subheader, spinnerContent } = data
 
     return (
@@ -38,6 +41,7 @@ const LanguagesAndFrameworks = ({ data }: FrameworksProps) => {
                                 ...spinnerContent?.frontend,
                             ].map((item, index) => (
                                 <Logo
+                                    isGreyscale={isGreyscale}
                                     key={index}
                                     img={`./images/frameworks/${item.image}-logo.svg`}
                                 />
@@ -53,6 +57,7 @@ const LanguagesAndFrameworks = ({ data }: FrameworksProps) => {
                                 ...spinnerContent?.backend,
                             ].map((item, index) => (
                                 <Logo
+                                    isGreyscale={isGreyscale}
                                     key={index}
                                     img={`./images/frameworks/${item.image}-logo.svg`}
                                 />
@@ -61,6 +66,10 @@ const LanguagesAndFrameworks = ({ data }: FrameworksProps) => {
                     </LogosContent>
                 </LogosRow>
             </LAFScrollContainer>
+            <ColorsToggle isGreyscale={isGreyscale}>
+                <h4>Toggle Colors</h4>
+                <Toggle value={isGreyscale} onChange={setColorToggle} />
+            </ColorsToggle>
         </LAFContainer>
     )
 }

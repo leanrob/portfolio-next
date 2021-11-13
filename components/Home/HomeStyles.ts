@@ -227,6 +227,35 @@ const SkillLink = styled.a`
     font-size: 14px;
 `
 
+const ColorsToggle = styled.div<{ isGreyscale: boolean }>`
+    width: 100%;
+    height: 200px;
+
+    h4 {
+        ${(props) =>
+            !props.isGreyscale &&
+            css`
+                background-image: linear-gradient(
+                    to right,
+                    red,
+                    green,
+                    blue,
+                    indigo,
+                    violet
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: move 35s linear infinite;
+            `}
+
+        @keyframes move {
+            to {
+                background-position: 4500vh;
+            }
+        }
+    }
+`
+
 // END - High Level Skills Styles
 
 // About This Site Styles
@@ -305,6 +334,7 @@ const LogosContent = styled.div<LogoContainerProps>`
 
 interface LogoProps {
     readonly img: string
+    readonly isGreyscale: boolean
 }
 
 const Logo = styled.div<LogoProps>`
@@ -316,7 +346,11 @@ const Logo = styled.div<LogoProps>`
     background-image: url(${(props) => props.img});
     background-repeat: no-repeat;
     background-position: center;
-    filter: grayscale(100%);
+    ${(props) =>
+        props.isGreyscale &&
+        css`
+            filter: grayscale(100%);
+        `}
     transition: all 0.5s ease;
 
     &:hover {
@@ -359,6 +393,7 @@ export {
     HLSContainer,
     Header,
     Subheader,
+    ColorsToggle,
     SkillsGrid,
     Skill,
     SkillTitle,
