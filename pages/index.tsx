@@ -15,7 +15,7 @@ import {
     Footer,
 } from '@components/Home'
 
-type HomeData = {
+export type HomeData = {
     menu: {
         menuItems: Array<{ title: string; link: string }>
     }
@@ -50,8 +50,6 @@ export const getStaticProps = async () => {
 }
 
 function Home({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
-    console.log('&&&&&')
-    console.log(data)
     dotenv.config()
 
     const { aboveTheFold, highLevelSkills, menu, languagesAndFrameworks } = data
@@ -63,7 +61,7 @@ function Home({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
                 <AboveTheFold data={aboveTheFold} />
                 <HighLevelSkills data={highLevelSkills} />
                 <AboutThisSite />
-                {/*<LanguagesAndFrameworks data={languagesAndFrameworks} />*/}
+                <LanguagesAndFrameworks data={languagesAndFrameworks} />
                 <ContactMe />
                 <Footer />
             </Container>

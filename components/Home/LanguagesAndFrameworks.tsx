@@ -23,8 +23,6 @@ type FrameworksProps = {
 }
 
 const LanguagesAndFrameworks = ({ data }: FrameworksProps) => {
-    console.log('*****')
-    console.log(JSON.stringify(data))
     const { header, subheader, spinnerContent } = data
 
     return (
