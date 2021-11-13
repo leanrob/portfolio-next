@@ -7,50 +7,40 @@ import {
     LogoSet,
     Logo,
     LogosContent,
+    Header,
+    Subheader,
 } from './HomeStyles'
 
-const LanguagesAndFrameworks = () => {
-    const langSet = [
-        {
-            image: 'styled-components',
-        },
-        {
-            image: 'typescript',
-        },
-        {
-            image: 'nextjs',
-        },
-        {
-            image: 'reactjs',
-        },
-        {
-            image: 'redux',
-        },
-        {
-            image: 'graphql',
-        },
-        {
-            image: 'react-native',
-        },
-        {
-            image: 'testing-library',
-        },
-        {
-            image: 'vuejs',
-        },
-        {
-            image: 'jest',
-        },
-    ]
-    const items = [...langSet, ...langSet]
+const LanguagesAndFrameworks = ({ data }: any) => {
+    const { header, subheader, spinnerContent } = data
 
     return (
         <LAFContainer>
+            <Header>{header}</Header>
+            <Subheader>{subheader}</Subheader>
             <LAFScrollContainer>
                 <LogosRow>
-                    <LogosContent>
+                    <LogosContent speed={0}>
                         <LogoSet>
-                            {items.map((item, index) => (
+                            {[
+                                ...spinnerContent.frontend,
+                                ...spinnerContent.frontend,
+                            ].map((item, index) => (
+                                <Logo
+                                    key={index}
+                                    img={`./images/frameworks/${item.image}-logo.svg`}
+                                />
+                            ))}
+                        </LogoSet>
+                    </LogosContent>
+                </LogosRow>
+                <LogosRow>
+                    <LogosContent speed={1}>
+                        <LogoSet>
+                            {[
+                                ...spinnerContent.backend,
+                                ...spinnerContent.backend,
+                            ].map((item, index) => (
                                 <Logo
                                     key={index}
                                     img={`./images/frameworks/${item.image}-logo.svg`}

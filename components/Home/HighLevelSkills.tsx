@@ -7,8 +7,8 @@ import {
     SkillTitle,
     SkillContent,
     SkillLink,
-    SkillsHeader,
-    SkillsSubheader,
+    Header,
+    Subheader,
 } from './HomeStyles'
 
 const HighLevelSkills = ({ data }: any) => {
@@ -25,8 +25,8 @@ const HighLevelSkills = ({ data }: any) => {
     })
     return (
         <HLSContainer>
-            <SkillsHeader>{header}</SkillsHeader>
-            <SkillsSubheader>{subheader}</SkillsSubheader>
+            <Header>{header}</Header>
+            <Subheader>{subheader}</Subheader>
             <SkillsGrid>{skillsGridItems}</SkillsGrid>
         </HLSContainer>
     )

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 // Menu Styles
 
@@ -156,7 +156,7 @@ const HLSContainer = styled.div`
     padding: 3rem 1rem 6.25rem 1rem;
 `
 
-const SkillsHeader = styled.h2`
+const Header = styled.h2`
     font-weight: 700;
     font-size: 2rem;
     letter-spacing: -1px;
@@ -164,7 +164,7 @@ const SkillsHeader = styled.h2`
     line-height: 1.3;
 `
 
-const SkillsSubheader = styled.p`
+const Subheader = styled.p`
     font-weight: 400;
     color: rgb(105, 105, 105);
     margin: 20px 1.5em 3em 1.5em;
@@ -242,6 +242,8 @@ const ATSContainer = styled.div`
 const LAFContainer = styled.div`
     width: 100%;
     height: 800px;
+    text-align: center;
+    margin-top: 70px;
 `
 
 const LAFScrollContainer = styled.div`
@@ -252,11 +254,53 @@ const LAFScrollContainer = styled.div`
     margin: 20px 0;
 `
 
-const LogosRow = styled.div``
+const LogosRow = styled.div`
+    margin: 30px 0;
+`
 
 const LogoSet = styled.div`
     display: flex;
     height: 60px;
+`
+
+interface LogoContainerProps {
+    readonly speed: number
+}
+
+const LogosContent = styled.div<LogoContainerProps>`
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: slide 80s linear infinite;
+    transform: translate3d(0, 0, 0);
+
+    ${(props) => {
+        switch (props.speed) {
+            case 0:
+                return css`
+                    animation: slide 80s linear infinite;
+                `
+            case 1:
+                return css`
+                    animation: slide 100s linear infinite;
+                `
+        }
+    }}
+
+    @keyframes slide {
+        0% {
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(-50%, 0, 0);
+            -moz-transform: translate3d(-50%, 0, 0);
+            -ms-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+        }
+    }
 `
 
 interface LogoProps {
@@ -277,29 +321,6 @@ const Logo = styled.div<LogoProps>`
 
     &:hover {
         filter: grayscale(0%);
-    }
-`
-
-const LogosContent = styled.div`
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: slide 80s linear infinite;
-    transform: translate3d(0, 0, 0);
-
-    @keyframes slide {
-        0% {
-            -webkit-transform: translate3d(0, 0, 0);
-            -moz-transform: translate3d(0, 0, 0);
-            -ms-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-        100% {
-            -webkit-transform: translate3d(-50%, 0, 0);
-            -moz-transform: translate3d(-50%, 0, 0);
-            -ms-transform: translate3d(-50%, 0, 0);
-            transform: translate3d(-50%, 0, 0);
-        }
     }
 `
 
@@ -336,8 +357,8 @@ export {
     CMContainer,
     FooterContainer,
     HLSContainer,
-    SkillsHeader,
-    SkillsSubheader,
+    Header,
+    Subheader,
     SkillsGrid,
     Skill,
     SkillTitle,

@@ -19,6 +19,7 @@ type HomeData = {
     menu: any
     aboveTheFold: any
     highLevelSkills: any
+    languagesAndFrameworks: any
 }
 
 export const getStaticProps = async () => {
@@ -35,7 +36,7 @@ export const getStaticProps = async () => {
 function Home({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
     dotenv.config()
 
-    const { aboveTheFold, highLevelSkills, menu } = data
+    const { aboveTheFold, highLevelSkills, menu, languagesAndFrameworks } = data
 
     return (
         <Page>
@@ -44,7 +45,7 @@ function Home({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
                 <AboveTheFold data={aboveTheFold} />
                 <HighLevelSkills data={highLevelSkills} />
                 <AboutThisSite />
-                <LanguagesAndFrameworks />
+                <LanguagesAndFrameworks data={languagesAndFrameworks} />
                 <ContactMe />
                 <Footer />
             </Container>
