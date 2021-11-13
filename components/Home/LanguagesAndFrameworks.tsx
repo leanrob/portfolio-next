@@ -12,34 +12,34 @@ import {
 const LanguagesAndFrameworks = () => {
     const langSet = [
         {
-            image: 'reactjs',
+            image: 'styled-components',
         },
         {
-            image: 'redis',
+            image: 'typescript',
         },
         {
-            image: 'reactjs',
-        },
-        {
-            image: 'reactjs',
+            image: 'nextjs',
         },
         {
             image: 'reactjs',
         },
         {
-            image: 'reactjs',
+            image: 'redux',
         },
         {
-            image: 'reactjs',
+            image: 'graphql',
         },
         {
-            image: 'reactjs',
+            image: 'react-native',
         },
         {
-            image: 'reactjs',
+            image: 'testing-library',
         },
         {
-            image: 'reactjs',
+            image: 'vuejs',
+        },
+        {
+            image: 'jest',
         },
     ]
     const items = [...langSet, ...langSet]

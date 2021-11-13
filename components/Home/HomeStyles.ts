@@ -267,11 +267,10 @@ const Logo = styled.div<LogoProps>`
     content: '';
     width: 200px;
     height: 100%;
-    margin: 0 10px;
+    margin: 0 5px;
     background-size: 196px;
     background-image: url(${(props) => props.img});
     background-repeat: no-repeat;
-    //background-attachment: fixed;
     background-position: center;
     filter: grayscale(100%);
     transition: all 0.5s ease;

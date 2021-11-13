@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 171 60" xmlns="http://www.w3.org/2000/svg">
+  <text style="fill: rgb(51, 51, 51); font-family: &quot;Fira Code&quot;; font-size: 7.1px; letter-spacing: 3.9px; white-space: pre;" x="10.194999694824219" y="38.733001708984375"><tspan> </tspan></text>
+  <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 6px;" x="52.842" y="48.886"> </text>
+  <path d="M 45.718 52.154 C 45.54 52.266 45.484 52.342 45.642 52.256 C 45.754 52.19 45.937 52.052 45.907 52.048 C 45.891 52.048 45.805 52.098 45.718 52.154 Z M 45.367 52.383 C 45.276 52.454 45.276 52.46 45.387 52.403 C 45.449 52.373 45.499 52.337 45.499 52.327 C 45.499 52.287 45.474 52.297 45.367 52.383 Z M 45.113 52.536 C 45.021 52.607 45.021 52.612 45.133 52.556 C 45.194 52.526 45.245 52.49 45.245 52.48 C 45.245 52.439 45.22 52.449 45.113 52.536 Z M 44.859 52.688 C 44.767 52.76 44.767 52.765 44.879 52.709 C 44.94 52.678 44.991 52.642 44.991 52.633 C 44.991 52.592 44.965 52.602 44.859 52.688 Z M 44.472 52.892 C 44.278 52.994 44.289 53.034 44.482 52.938 C 44.569 52.892 44.635 52.846 44.635 52.836 C 44.635 52.8 44.629 52.806 44.472 52.892 Z" style=""/>
+  <g transform="matrix(0.283604, 0, 0, -0.283604, -3.848794, 72.455238)" style="">
+    <g transform="translate(178.06 235.01)">
+      <path d="m0 0-22.669-39.264-22.669 39.264h-75.491l98.16-170.02 98.16 170.02z" fill="#41b883"/>
+    </g>
+    <g transform="translate(178.06 235.01)">
+      <path d="m0 0-22.669-39.264-22.669 39.264h-36.227l58.896-102.01 58.896 102.01z" fill="#34495e"/>
+    </g>
+  </g>
+  <text style="fill: rgb(52, 73, 94); font-family: &quot;JetBrains Mono&quot;; font-size: 23px; white-space: pre;" x="-10.257" y="3.793"><tspan x="81.478" y="40.362" style="font-size: 28px; word-spacing: 0px;">Vue</tspan><tspan style="font-size: 15px; word-spacing: 0px;">.js</tspan></text>
+</svg>
