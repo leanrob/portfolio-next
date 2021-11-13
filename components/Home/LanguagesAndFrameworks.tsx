@@ -11,7 +11,18 @@ import {
     Subheader,
 } from './HomeStyles'
 
-const LanguagesAndFrameworks = ({ data }: any) => {
+type FrameworksProps = {
+    data: {
+        header: string
+        subheader: string
+        spinnerContent: {
+            backend: Array<{ image: string }>
+            frontend: Array<{ image: string }>
+        }
+    }
+}
+
+const LanguagesAndFrameworks = ({ data }: FrameworksProps) => {
     const { header, subheader, spinnerContent } = data
 
     return (

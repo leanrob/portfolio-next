@@ -16,10 +16,26 @@ import {
 } from '@components/Home'
 
 type HomeData = {
-    menu: any
-    aboveTheFold: any
-    highLevelSkills: any
-    languagesAndFrameworks: any
+    menu: {
+        menuItems: Array<{ title: string; link: string }>
+    }
+    aboveTheFold: {
+        header: string
+        subheader: string
+    }
+    highLevelSkills: {
+        header: string
+        subheader: string
+        skills: Array<{ title: string; content: string; link: string }>
+    }
+    languagesAndFrameworks: {
+        header: string
+        subheader: string
+        spinnerContent: {
+            backend: Array<{ image: string }>
+            frontend: Array<{ image: string }>
+        }
+    }
 }
 
 export const getStaticProps = async () => {
