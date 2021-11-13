@@ -50,6 +50,8 @@ export const getStaticProps = async () => {
 }
 
 function Home({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
+    console.log('&&&&&')
+    console.log(data)
     dotenv.config()
 
     const { aboveTheFold, highLevelSkills, menu, languagesAndFrameworks } = data
