@@ -66,22 +66,22 @@ const LanguagesAndFrameworks = ({ data }: FrameworksProps) => {
                         </LogoSet>
                     </LogosContent>
                 </LogosRow>
-                {/*<LogosRow>*/}
-                {/*    <LogosContent speed={1}>*/}
-                {/*        <LogoSet>*/}
-                {/*            {[*/}
-                {/*                ...spinnerContent?.devops,*/}
-                {/*                ...spinnerContent?.devops,*/}
-                {/*            ].map((item, index) => (*/}
-                {/*                <Logo*/}
-                {/*                    isGreyscale={isGreyscale}*/}
-                {/*                    key={index}*/}
-                {/*                    img={`./images/frameworks/${item.image}-logo.svg`}*/}
-                {/*                />*/}
-                {/*            ))}*/}
-                {/*        </LogoSet>*/}
-                {/*    </LogosContent>*/}
-                {/*</LogosRow>*/}
+                <LogosRow>
+                    <LogosContent speed={1}>
+                        <LogoSet>
+                            {[
+                                ...spinnerContent?.devops,
+                                ...spinnerContent?.devops,
+                            ].map((item, index) => (
+                                <Logo
+                                    isGreyscale={isGreyscale}
+                                    key={index}
+                                    img={`./images/frameworks/${item.image}-logo.svg`}
+                                />
+                            ))}
+                        </LogoSet>
+                    </LogosContent>
+                </LogosRow>
             </LAFScrollContainer>
             <ColorsToggle isGreyscale={isGreyscale}>
                 <h4>Toggle Colors</h4>
