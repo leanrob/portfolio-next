@@ -103,6 +103,7 @@ const ATFSpacer = styled.div`
     background-position: center;
     background-size: cover;
     background-image: url('./images/layered-waves.svg');
+    margin-top: auto;
 
     @media (max-width: 690px) {
         background-image: url('./images/layered-waves-mobile.svg');

@@ -15,7 +15,12 @@ import {
     Footer,
 } from '@components/Home'
 
+import Layout from '@components/common/Layout'
+
 export type HomeData = {
+    pageLevel: {
+        title: string
+    }
     menu: {
         menuItems: Array<{ title: string; link: string }>
     }
@@ -53,10 +58,16 @@ export const getStaticProps = async () => {
 function Home({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
     dotenv.config()
 
-    const { aboveTheFold, highLevelSkills, menu, languagesAndFrameworks } = data
+    const {
+        aboveTheFold,
+        highLevelSkills,
+        menu,
+        languagesAndFrameworks,
+        pageLevel,
+    } = data
 
     return (
-        <Page>
+        <Layout title={pageLevel.title}>
             <Container>
                 <Menu data={menu} />
                 <AboveTheFold data={aboveTheFold} />
@@ -66,7 +77,7 @@ function Home({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
                 <ContactMe />
                 <Footer />
             </Container>
-        </Page>
+        </Layout>
     )
 }
 

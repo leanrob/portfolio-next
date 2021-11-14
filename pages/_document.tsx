@@ -22,9 +22,6 @@ export default class MyDocument extends Document {
         return (
             <Html lang="en-US">
                 <Head>
-                    <title>
-                        Rob Byrne: A Software Craftsman - Portfolio Site
-                    </title>
                     <meta
                         name="description"
                         content="A portfolio site for Rob Byrne - A Software Craftsman"

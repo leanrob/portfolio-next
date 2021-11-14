@@ -4,6 +4,7 @@ const Page = styled.div`
     height: 100vh;
     width: 100vw;
     overflow-y: scroll;
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     background-color: ${(props) => props.theme.home.white};
