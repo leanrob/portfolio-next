@@ -21,6 +21,7 @@ const AboutThisSite = ({
                     type="checkbox"
                     name="example"
                     id="example"
+                    aria-label="toggle"
                     value={String(value)}
                     defaultChecked={value}
                     onClick={(e) => {
