@@ -231,7 +231,7 @@ const ColorsToggle = styled.div<{ isGreyscale: boolean }>`
     width: 100%;
     height: 200px;
 
-    h4 {
+    h3 {
         ${(props) =>
             !props.isGreyscale &&
             css`

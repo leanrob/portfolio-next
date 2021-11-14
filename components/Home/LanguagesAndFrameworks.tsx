@@ -84,7 +84,7 @@ const LanguagesAndFrameworks = ({ data }: FrameworksProps) => {
                 </LogosRow>
             </LAFScrollContainer>
             <ColorsToggle isGreyscale={isGreyscale}>
-                <h4>Toggle Colors</h4>
+                <h3>Toggle Colors</h3>
                 <Toggle value={isGreyscale} onChange={setColorToggle} />
             </ColorsToggle>
         </LAFContainer>
