@@ -54,7 +54,7 @@ function Home({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
     dotenv.config()
 
     console.log('&&&&&')
-    console.log(data)
+    console.log(JSON.stringify(data))
 
     const { aboveTheFold, highLevelSkills, menu, languagesAndFrameworks } = data
 
