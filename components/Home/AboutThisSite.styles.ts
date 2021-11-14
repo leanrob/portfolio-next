@@ -18,7 +18,6 @@ const ATSContainer = styled.div`
 
 const ATSContent = styled.div`
     max-width: 1050px;
-    width: 1050px;
     display: flex;
     flex-direction: column;
     align-items: center;
