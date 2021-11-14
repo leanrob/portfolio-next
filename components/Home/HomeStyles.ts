@@ -153,7 +153,8 @@ const HLSContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 1rem 6.25rem 1rem;
+    padding: 0 1rem 2rem 1rem;
+    margin-top: 70px;
 `
 
 const Header = styled.h2`
@@ -262,8 +263,36 @@ const ColorsToggle = styled.div<{ isGreyscale: boolean }>`
 
 const ATSContainer = styled.div`
     width: 100%;
-    background-color: lightblue;
-    height: 600px;
+    background-color: ${(props) => props.theme.home.black};
+    color: ${(props) => props.theme.home.white};
+`
+
+const ATSSpacer = styled.div`
+    aspect-ratio: 900/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./images/waves-1.svg');
+
+    @media (max-width: 690px) {
+        background-image: url('./images/waves-1-mobile.svg');
+        aspect-ratio: 900/675;
+    }
+`
+
+const ATSEnder = styled.div`
+    aspect-ratio: 900/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./images/waves-2.svg');
+
+    @media (max-width: 690px) {
+        background-image: url('./images/waves-2.svg');
+        aspect-ratio: 900/675;
+    }
 `
 
 // Languages and Frameworks Styles
@@ -272,7 +301,7 @@ const LAFContainer = styled.div`
     width: 100%;
     height: 800px;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 50px;
 `
 
 const LAFScrollContainer = styled.div`
@@ -307,15 +336,15 @@ const LogosContent = styled.div<LogoContainerProps>`
         switch (props.speed) {
             case 0:
                 return css`
-                    animation: slide 80s linear infinite;
+                    animation: slide 140s linear infinite;
                 `
             case 1:
                 return css`
-                    animation: slide 100s linear infinite;
+                    animation: slide 160s linear infinite;
                 `
             case 2:
                 return css`
-                    animation: slide 120s linear infinite;
+                    animation: slide 180s linear infinite;
                 `
         }
     }}
@@ -386,6 +415,8 @@ export {
     ATFSubheader,
     ATFSpacer,
     ATSContainer,
+    ATSSpacer,
+    ATSEnder,
     LAFContainer,
     LAFScrollContainer,
     LogosRow,

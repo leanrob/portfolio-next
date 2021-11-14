@@ -40,6 +40,7 @@ const LanguagesAndFrameworks = ({ data }: FrameworksProps) => {
                             {[
                                 ...spinnerContent?.frontend,
                                 ...spinnerContent?.frontend,
+                                ...spinnerContent?.frontend,
                             ].map((item, index) => (
                                 <Logo
                                     isGreyscale={isGreyscale}
@@ -56,6 +57,7 @@ const LanguagesAndFrameworks = ({ data }: FrameworksProps) => {
                             {[
                                 ...spinnerContent?.backend,
                                 ...spinnerContent?.backend,
+                                ...spinnerContent?.backend,
                             ].map((item, index) => (
                                 <Logo
                                     isGreyscale={isGreyscale}
@@ -70,6 +72,7 @@ const LanguagesAndFrameworks = ({ data }: FrameworksProps) => {
                     <LogosContent speed={1}>
                         <LogoSet>
                             {[
+                                ...spinnerContent?.devops,
                                 ...spinnerContent?.devops,
                                 ...spinnerContent?.devops,
                             ].map((item, index) => (
