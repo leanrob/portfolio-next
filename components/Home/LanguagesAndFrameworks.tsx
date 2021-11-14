@@ -26,7 +26,7 @@ type FrameworksProps = {
 }
 
 const LanguagesAndFrameworks = ({ data }: FrameworksProps) => {
-    const [isGreyscale, setColorToggle] = React.useState(true)
+    const [isGreyscale, setColorToggle] = React.useState(false)
     const { header, subheader, spinnerContent } = data
 
     return (

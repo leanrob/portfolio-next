@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 const HLSContainer = styled.div`
     max-width: 1050px;
