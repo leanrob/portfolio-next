@@ -23,6 +23,79 @@
       }
     ]
   },
+  "aboveTheFold": {
+    "header": "Rob Byrne",
+    "subheader": "Software Engineer"
+  },
+  "highLevelSkills": {
+    "header": "High Level Skills",
+    "subheader": "Would you like a high-level overview or an in-depth look? Yes!",
+    "skills": [
+      {
+        "title": "Frontend & UX",
+        "content": "Building pixel-perfect web apps with intuitive UX. Exceptional experiences for amazing customers!",
+        "link": "/frontend"
+      },
+      {
+        "title": "Tooling for Devs",
+        "content": "I have built tooling for companies of all sizes to make developers more productive & empowered every day.",
+        "link": "/tooling"
+      },
+      {
+        "title": "Backend",
+        "content": "API's of all kinds! RESTful, GraphQL, NodeJS serverless functions, Ruby-on-Rails, event-based systems in Rust...",
+        "link": "/backend"
+      },
+      {
+        "title": "DevOps",
+        "content": "Continuous delivery, continuous integration, continuous monitoring and always continuous improvement.",
+        "link": "/devops"
+      },
+      {
+        "title": "Cloud Computing",
+        "content": "Deploying full-stack apps in Google Cloud Platform, Amazon AWS, Vercel, Heroku, and more.",
+        "link": "/cloud"
+      },
+      {
+        "title": "Commerce",
+        "content": "Building e-commerce solutions for companies of all sizes. Both eCommerce and Retail Commerce right in the store.",
+        "link": "/commerce"
+      },
+      {
+        "title": "Financial Technology",
+        "content": "Building performant and secure platforms that stand up to thorough scrutiny from regulatory agencies.",
+        "link": "/financial-tech"
+      },
+      {
+        "title": "Constant Improvement",
+        "content": "Getting a little better each day! Books, courses, articles, peers, pair programming, anything to improve.",
+        "link": "/improvement"
+      },
+      {
+        "title": "Professional Development",
+        "content": "Always becoming a better professional. Trading in direct, constructive feedback so that we all improve.",
+        "link": "/professionalism"
+      },
+      {
+        "title": "Always taking notes",
+        "content": "In a real-life Moleskine notebooks, and digitally with markdown in Obsidian. I'm always adding to my second brain!",
+        "link": "/note-taking"
+      },
+      {
+        "title": "Conscious Awareness",
+        "content": "Meditation is who I am not what I do. Always trying to find out more about who or what I am at the core.",
+        "link": "/meditation"
+      },
+      {
+        "title": "Life is good",
+        "content": "Living Each day to the fullest. Travelling, meditating swimming, golfing, hiking, yoga,  reading, gaming, concerts...",
+        "link": "/life"
+      }
+    ]
+  },
+  "aboutThisSite": {
+
+  },
   "languagesAndFrameworks": {
     "header": "Languages, Frameworks, DevOps & Tooling",
     "subheader": "So many tools, so little time. Which to choose? \n Choose the right one for the job!",
@@ -124,75 +197,5 @@
         }
       ]
     }
-  },
-  "aboveTheFold": {
-    "header": "Rob Byrne",
-    "subheader": "Software Engineer"
-  },
-  "highLevelSkills": {
-    "header": "High Level Skills",
-    "subheader": "Would you like a high-level overview or an in-depth look? Yes!",
-    "skills": [
-      {
-        "title": "Frontend & UX",
-        "content": "Building pixel-perfect web apps with intuitive UX. Exceptional experiences for amazing customers!",
-        "link": "/frontend"
-      },
-      {
-        "title": "Tooling for Devs",
-        "content": "I have built tooling for companies of all sizes to make developers more productive & empowered every day.",
-        "link": "/tooling"
-      },
-      {
-        "title": "Backend",
-        "content": "API's of all kinds! RESTful, GraphQL, NodeJS serverless functions, Ruby-on-Rails, event-based systems in Rust...",
-        "link": "/backend"
-      },
-      {
-        "title": "DevOps",
-        "content": "Continuous delivery, continuous integration, continuous monitoring and always continuous improvement.",
-        "link": "/devops"
-      },
-      {
-        "title": "Cloud Computing",
-        "content": "Deploying full-stack apps in Google Cloud Platform, Amazon AWS, Vercel, Heroku, and more.",
-        "link": "/cloud"
-      },
-      {
-        "title": "Commerce",
-        "content": "Building e-commerce solutions for companies of all sizes. Both eCommerce and Retail Commerce right in the store.",
-        "link": "/commerce"
-      },
-      {
-        "title": "Financial Technology",
-        "content": "Building performant and secure platforms that stand up to thorough scrutiny from regulatory agencies.",
-        "link": "/financial-tech"
-      },
-      {
-        "title": "Constant Improvement",
-        "content": "Getting a little better each day! Books, courses, articles, peers, pair programming, anything to improve.",
-        "link": "/improvement"
-      },
-      {
-        "title": "Professional Development",
-        "content": "Always becoming a better professional. Trading in direct, constructive feedback so that we all improve.",
-        "link": "/professionalism"
-      },
-      {
-        "title": "Always taking notes",
-        "content": "In a real-life Moleskine notebooks, and digitally with markdown in Obsidian. I'm always adding to my second brain!",
-        "link": "/note-taking"
-      },
-      {
-        "title": "Conscious Awareness",
-        "content": "Meditation is who I am not what I do. Always trying to find out more about who or what I am at the core.",
-        "link": "/meditation"
-      },
-      {
-        "title": "Life is good",
-        "content": "Living Each day to the fullest. Travelling, meditating swimming, golfing, hiking, yoga,  reading, gaming, concerts...",
-        "link": "/life"
-      }
-    ]
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ATSContainer, ATSSpacer, ATSEnder } from './HomeStyles'
+import { ATSContainer, ATSSpacer, ATSEnder } from './AboutThisSite.styles'
 
 const AboutThisSite = () => {
     return (

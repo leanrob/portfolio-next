@@ -7,9 +7,9 @@ import {
     SkillTitle,
     SkillContent,
     SkillLink,
-    Header,
-    Subheader,
-} from './HomeStyles'
+} from './HighLevelSkills.styles'
+
+import { Header, Subheader } from './HomeStyles'
 
 const HighLevelSkills = ({ data }: any) => {
     const { skills, header, subheader } = data

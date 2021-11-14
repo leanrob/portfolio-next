@@ -6,7 +6,7 @@ import {
     ATFContent,
     ATFHeader,
     ATFSubheader,
-} from './HomeStyles'
+} from './AboveTheFold.styles'
 
 const AboveTheFold = ({ data }: any) => (
     <ATFContainer>

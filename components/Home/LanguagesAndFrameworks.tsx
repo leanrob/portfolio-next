@@ -7,10 +7,10 @@ import {
     LogoSet,
     Logo,
     LogosContent,
-    Header,
-    Subheader,
     ColorsToggle,
-} from './HomeStyles'
+} from './LanguagesAndFrameworks.styles'
+import { Header, Subheader } from './HomeStyles'
+
 import Toggle from '@components/common/Toggle'
 
 type FrameworksProps = {

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { MenuContainer, MenuItems, Item } from './HomeStyles'
+import { MenuContainer, MenuItems, Item } from './Menu.styles'
 
 const Menu = ({ data }: any) => {
     const { menuItems } = data
