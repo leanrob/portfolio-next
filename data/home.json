@@ -59,38 +59,6 @@
           "image": "sqlite"
         }
       ],
-      "frontend": [
-        {
-          "image": "styled-components"
-        },
-        {
-          "image": "typescript"
-        },
-        {
-          "image": "nextjs"
-        },
-        {
-          "image": "reactjs"
-        },
-        {
-          "image": "redux"
-        },
-        {
-          "image": "graphql"
-        },
-        {
-          "image": "react-native"
-        },
-        {
-          "image": "testing-library"
-        },
-        {
-          "image": "vuejs"
-        },
-        {
-          "image": "jest"
-        }
-      ],
       "devops": [
         {
           "image": "heroku"
@@ -121,6 +89,38 @@
         },
         {
           "image": "electron"
+        }
+      ],
+      "frontend": [
+        {
+          "image": "styled-components"
+        },
+        {
+          "image": "typescript"
+        },
+        {
+          "image": "nextjs"
+        },
+        {
+          "image": "reactjs"
+        },
+        {
+          "image": "redux"
+        },
+        {
+          "image": "graphql"
+        },
+        {
+          "image": "react-native"
+        },
+        {
+          "image": "testing-library"
+        },
+        {
+          "image": "vuejs"
+        },
+        {
+          "image": "jest"
         }
       ]
     }
