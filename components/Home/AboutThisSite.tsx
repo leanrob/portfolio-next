@@ -1,12 +1,22 @@
 import React from 'react'
 
-import { ATSContainer, ATSSpacer, ATSEnder } from './AboutThisSite.styles'
+import {
+    ATSContainer,
+    ATSContent,
+    ATSSpacer,
+    ATSEnder,
+} from './AboutThisSite.styles'
+
+import { Header, Subheader } from '@components/Home/HomeStyles'
 
 const AboutThisSite = () => {
     return (
         <ATSContainer>
             <ATSSpacer />
-            <p>about this site</p>
+            <ATSContent>
+                <Header>Stuff</Header>
+                <Subheader>Subheader</Subheader>
+            </ATSContent>
             <ATSEnder />
         </ATSContainer>
     )

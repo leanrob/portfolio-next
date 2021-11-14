@@ -2,6 +2,28 @@ import styled from 'styled-components'
 
 const ATSContainer = styled.div`
     width: 100%;
+    background: linear-gradient(
+        180deg,
+        ${(props) => props.theme.home.white} 0%,
+        ${(props) => props.theme.home.black} 9%,
+        ${(props) => props.theme.home.black} 91%,
+        ${(props) => props.theme.home.white} 100%
+    );
+    background-color: ${(props) => props.theme.home.black};
+    color: ${(props) => props.theme.home.white};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
+const ATSContent = styled.div`
+    max-width: 1050px;
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem 2rem 1rem;
+    margin-top: 70px;
     background-color: ${(props) => props.theme.home.black};
     color: ${(props) => props.theme.home.white};
 `
@@ -34,4 +56,4 @@ const ATSEnder = styled.div`
     }
 `
 
-export { ATSContainer, ATSSpacer, ATSEnder }
+export { ATSContainer, ATSContent, ATSSpacer, ATSEnder }
