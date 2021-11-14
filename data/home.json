@@ -53,10 +53,10 @@
           "image": "kubernetes"
         },
         {
-          "image": "vercel"
+          "image": "ruby-on-rails"
         },
         {
-          "image": "google-cloud-platform"
+          "image": "sqlite"
         }
       ],
       "frontend": [
@@ -89,6 +89,38 @@
         },
         {
           "image": "jest"
+        }
+      ],
+      "devops": [
+        {
+          "image": "heroku"
+        },
+        {
+          "image": "google-cloud-platform"
+        },
+        {
+          "image": "amazon-web-services"
+        },
+        {
+          "image": "github"
+        },
+        {
+          "image": "kotlin"
+        },
+        {
+          "image": "obsidian"
+        },
+        {
+          "image": "jetbrains"
+        },
+        {
+          "image": "swift"
+        },
+        {
+          "image": "vercel"
+        },
+        {
+          "image": "electron"
         }
       ]
     }

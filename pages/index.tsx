@@ -34,6 +34,7 @@ export type HomeData = {
         spinnerContent: {
             backend: Array<{ image: string }>
             frontend: Array<{ image: string }>
+            devops: Array<{ image: string }>
         }
     }
 }

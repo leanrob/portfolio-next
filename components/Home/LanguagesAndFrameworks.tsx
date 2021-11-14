@@ -20,6 +20,7 @@ type FrameworksProps = {
         spinnerContent: {
             backend: Array<{ image: string }>
             frontend: Array<{ image: string }>
+            devops: Array<{ image: string }>
         }
     }
 }
@@ -50,11 +51,27 @@ const LanguagesAndFrameworks = ({ data }: FrameworksProps) => {
                     </LogosContent>
                 </LogosRow>
                 <LogosRow>
-                    <LogosContent speed={1}>
+                    <LogosContent speed={2}>
                         <LogoSet>
                             {[
                                 ...spinnerContent?.backend,
                                 ...spinnerContent?.backend,
+                            ].map((item, index) => (
+                                <Logo
+                                    isGreyscale={isGreyscale}
+                                    key={index}
+                                    img={`./images/frameworks/${item.image}-logo.svg`}
+                                />
+                            ))}
+                        </LogoSet>
+                    </LogosContent>
+                </LogosRow>
+                <LogosRow>
+                    <LogosContent speed={1}>
+                        <LogoSet>
+                            {[
+                                ...spinnerContent?.devops,
+                                ...spinnerContent?.devops,
                             ].map((item, index) => (
                                 <Logo
                                     isGreyscale={isGreyscale}

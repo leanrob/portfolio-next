@@ -313,6 +313,10 @@ const LogosContent = styled.div<LogoContainerProps>`
                 return css`
                     animation: slide 100s linear infinite;
                 `
+            case 2:
+                return css`
+                    animation: slide 120s linear infinite;
+                `
         }
     }}
 
