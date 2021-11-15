@@ -8,7 +8,7 @@ const Header = styled.h2`
     line-height: 1.3;
 `
 
-const Subheader = styled.p<{ dark: boolean }>`
+const Subheader = styled.p<{ dark?: boolean }>`
     font-weight: 400;
     ${(props) =>
         props.dark
