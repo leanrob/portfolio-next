@@ -7,8 +7,8 @@ const MenuContainer = styled.div`
     align-items: center;
     background-color: ${(props) => props.theme.home.white};
     min-height: 80px;
-    position: sticky;
-    top: 0;
+    //position: sticky;
+    //top: 0;
 `
 
 const MenuItems = styled.div`
