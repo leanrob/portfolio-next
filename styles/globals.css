@@ -6,10 +6,6 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-body {
-  position: absolute;
-}
-
 ::-webkit-scrollbar {
   width: 8px;
 }
