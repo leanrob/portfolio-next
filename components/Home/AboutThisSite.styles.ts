@@ -22,7 +22,6 @@ const ATSContent = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 0 1rem 2rem 1rem;
-    margin-top: 70px;
     background-color: ${(props) => props.theme.home.black};
     color: ${(props) => props.theme.home.white};
 `

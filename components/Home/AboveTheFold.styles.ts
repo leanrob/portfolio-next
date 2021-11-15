@@ -31,10 +31,10 @@ const ATFHeader = styled.div`
     max-width: 1050px;
 
     h1 {
-        font-family: bluu;
+        font-family: 'Comfortaa', cursive;
         font-weight: 700;
         font-size: 7rem;
-        letter-spacing: 2px;
+        letter-spacing: 0;
         margin: 25% 0 0.5rem 0;
         line-height: 0.42;
 
@@ -46,7 +46,7 @@ const ATFHeader = styled.div`
 
     h2 {
         font-weight: 600;
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         letter-spacing: 2px;
         margin-bottom: 4.2rem;
         line-height: 1.3;
