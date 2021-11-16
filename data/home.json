@@ -28,7 +28,18 @@
   },
   "aboveTheFold": {
     "header": "Rob Byrne",
-    "subheader": "Software Engineer"
+    "subheader": "Web & Mobile",
+    "content": {
+      "lineOne": "Crafting quality software in a variety of domains",
+      "lineTwo": "Full-stack solutions;",
+      "tech": {
+        "react": "React",
+        "reactNative": "React Native",
+        "node": "Node",
+        "rubyOnRails": "Ruby on Rails",
+        "rust": "Rust",
+      }
+    }
   },
   "highLevelSkills": {
     "header": "High Level Skills",
