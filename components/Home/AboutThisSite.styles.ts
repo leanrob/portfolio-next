@@ -23,8 +23,14 @@ const ATSContent = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 0 1rem 2rem 1rem;
-    background-color: ${(props) => props.theme.home.black};
+    background-color: ${(props) => props.theme.home.grey};
     color: ${(props) => props.theme.home.white};
+    background-image: linear-gradient(
+        to bottom,
+        ${(props) => props.theme.home.grey},
+        ${(props) => props.theme.home.black}
+    );
+    border-radius: 8px;
 `
 
 const ATSSpacer = styled.div`

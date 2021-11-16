@@ -27,6 +27,17 @@ export type HomeData = {
     aboveTheFold: {
         header: string
         subheader: string
+        content: {
+            lineOne: string
+            lineTwo: string
+            tech: {
+                react: string
+                reactNative: string
+                node: string
+                rubyOnRails: string
+                rust: string
+            }
+        }
     }
     highLevelSkills: {
         header: string
