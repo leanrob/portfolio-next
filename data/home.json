@@ -108,7 +108,22 @@
     ]
   },
   "aboutThisSite": {
-
+    "header": "How It's Made - Portfolio Edition",
+    "subheader": "This site was made with some very cool, cutting edge technology! Check out more about them below...",
+    "items": [
+      {
+        "title": "It's a NextJS App!",
+        "content": "Built using NextJS 12 with blazing-fast edge functions. With TypeScript because Javascript can us some help sometimes!"
+      },
+      {
+        "title": "Static Site Generation (SSG)",
+        "content": "HTML generated at build time. Better performance, security, and SEO built in for the modern web."
+      },
+      {
+        "title": "Styled Components",
+        "content": "All styling accomplished with styled-components to have all CSS capabilities without a bunch of SASS files in the codebase."
+      }
+    ]
   },
   "languagesAndFrameworks": {
     "header": "Languages, Frameworks, DevOps & Tooling",
