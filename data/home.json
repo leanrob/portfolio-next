@@ -121,7 +121,7 @@
       },
       {
         "title": "Styled Components",
-        "content": "All styling accomplished with styled-components to have all CSS capabilities without a bunch of SASS files in the codebase."
+        "content": "All styling accomplished with styled-components to have all CSS capabilities without a bunch of SASS files."
       }
     ]
   },
