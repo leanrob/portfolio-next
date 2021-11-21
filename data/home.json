@@ -113,11 +113,11 @@
     "items": [
       {
         "title": "It's a NextJS App!",
-        "content": "Built using NextJS 12 with blazing-fast edge functions. With TypeScript because Javascript can us some help sometimes!"
+        "content": "NextJS 12 is built with a Rust compiler that makes it blazing fast! Using TypeScript because Javascript can us some help sometimes!"
       },
       {
         "title": "Static Site Generation (SSG)",
-        "content": "HTML generated at build time. Better performance, security, and SEO built in for the modern web."
+        "content": "Generate a static HTML site at build time! Improved performance, stronger security, and built-in perfected SEO (Search Engine Optimization)"
       },
       {
         "title": "Styled Components",

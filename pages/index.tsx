@@ -44,6 +44,11 @@ export type HomeData = {
         subheader: string
         skills: Array<{ title: string; content: string; link: string }>
     }
+    aboutThisSite: {
+        header: string
+        subheader: string
+        items: Array<{ title: string; content: string }>
+    }
     languagesAndFrameworks: {
         header: string
         subheader: string
@@ -75,6 +80,7 @@ function Home({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
         menu,
         languagesAndFrameworks,
         pageLevel,
+        aboutThisSite,
     } = data
 
     return (
@@ -83,7 +89,7 @@ function Home({ data }: InferGetStaticPropsType<typeof getStaticProps>) {
                 <Menu data={menu} />
                 <AboveTheFold data={aboveTheFold} />
                 <HighLevelSkills data={highLevelSkills} />
-                <AboutThisSite />
+                <AboutThisSite data={aboutThisSite} />
                 <LanguagesAndFrameworks data={languagesAndFrameworks} />
                 <ContactMe />
                 <Footer />

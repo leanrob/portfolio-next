@@ -15,22 +15,16 @@ const ATSContainer = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: relative;
 `
 
 const ATSContent = styled.div`
     max-width: 1050px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 1rem 2rem 1rem;
-    background-color: ${(props) => props.theme.home.grey};
     color: ${(props) => props.theme.home.white};
-    background-image: linear-gradient(
-        to bottom,
-        ${(props) => props.theme.home.grey},
-        ${(props) => props.theme.home.black}
-    );
-    border-radius: 8px;
 `
 
 const ATSSpacer = styled.div`
@@ -61,4 +55,84 @@ const ATSEnder = styled.div`
     }
 `
 
-export { ATSContainer, ATSContent, ATSSpacer, ATSEnder }
+const ATSFlex = styled.div`
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+
+    @media (max-width: 690px) {
+        flex-direction: column;
+    }
+`
+
+const ATSIcon = styled.div`
+    margin: auto;
+    padding-bottom: 20px;
+
+    @media (max-width: 690px) {
+        padding-bottom: 50px;
+
+        svg {
+            width: 100vw;
+            height: auto;
+        }
+    }
+`
+
+const ATSInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+
+    @media (max-width: 690px) {
+        padding-left: 0;
+        margin: 0 20px;
+    }
+`
+
+const ATSItem = styled.div`
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 100%;
+    background-color: ${(props) => props.theme.home.white};
+    padding: 20px 20px 10px 20px;
+    color: ${(props) => props.theme.home.black};
+    text-align: left;
+    margin-bottom: 30px;
+
+    p {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    &:hover {
+        transition: box-shadow 0.2s ease;
+        box-shadow: #8d8c8a 0px 8px 30px 0px;
+        border: 1px solid transparent;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+`
+
+const ATSTitle = styled.span`
+    font-weight: 600;
+    font-size: 1.125em;
+    color: ${(props) => props.theme.home.black};
+`
+
+export {
+    ATSContainer,
+    ATSContent,
+    ATSSpacer,
+    ATSEnder,
+    ATSFlex,
+    ATSIcon,
+    ATSInfo,
+    ATSItem,
+    ATSTitle,
+}
